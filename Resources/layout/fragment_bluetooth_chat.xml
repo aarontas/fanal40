@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2014 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Toolbar
+        android:id="@+id/toolbar_bottom"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="?android:attr/colorAccent"
+        android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
+        android:popupTheme="@android:style/ThemeOverlay.Material.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title = "@string/app_name"
+        android:titleTextColor = "@android:color/white"/>
+    <TextView
+        android:id="@+id/deviceselected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize= "20dp"
+        android:text ="No device connected" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:text="LOAD1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize= "25dp"
+            android:textColor = "#1A4C87"
+            android:background="#E8FFCB"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+
+         <TextView
+            android:text="LOAD2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize= "25dp"
+            android:textColor = "#1A4C87"
+            android:background="#E8FFCB"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+         <TextView
+            android:text="LOAD3"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize= "25dp"
+            android:textColor = "#1A4C87"
+            android:background="#E8FFCB"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:text="Time1:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize= "18dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/Schudle1" />
+
+         <TextView
+            android:text="Time2:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize= "18dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/Schudle2" />
+
+         <TextView
+            android:text="Time3:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize= "18dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/Schudle3" />
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:text="Power1:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize= "18dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/Power1" />
+
+         <TextView
+            android:text="Power2:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize= "18dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/Power2" />
+
+         <TextView
+            android:text="Power3:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize= "18dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/Power3" />
+    </LinearLayout>
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <com.akaita.android.circularseekbar.CircularSeekBar
+          android:id="@+id/seekbar"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:gravity="center"
+          />
+
+        <com.akaita.android.circularseekbar.CircularSeekBar
+          android:id="@+id/seekbar2"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:gravity="center"
+          />
+
+        <com.akaita.android.circularseekbar.CircularSeekBar
+          android:id="@+id/seekbar3"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:gravity="center"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation ="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:id = "@+id/LinLay1"
+        android:orientation ="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/battery_status"/>
+
+        <TextView
+            android:id="@+id/txtBattery_Status" 
+            android:text="Battery Status:"
+            android:textSize= "18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"/>
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progress1"
+            android:layout_width="200.0dp"
+            android:layout_height="20dp"
+            android:progress = "50"
+            />
+
+     </LinearLayout>
+    <LinearLayout
+        android:id = "@+id/LinLay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/battery_tension"/>
+
+        <TextView
+            android:id="@+id/txtBattery_volt" 
+            android:text="Battery Voltage:"
+            android:textSize= "18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"/>
+
+         <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progress2"
+            android:layout_width="200.0dp"
+            android:layout_height="20dp"
+            android:progress = "50"
+            />
+     </LinearLayout>
+    <LinearLayout
+        android:id = "@+id/LinLay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/battery_intensidad"/>
+
+        <TextView
+            android:id="@+id/txtBattery_intensity" 
+            android:text="Battery Intensity:"
+            android:textSize= "18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"/>
+
+         <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progress3"
+            android:layout_width="200.0dp"
+            android:layout_height="20dp"
+            android:min = "-2"
+            android:max = "6"
+            android:progress = "50"
+            />
+     </LinearLayout>
+    <LinearLayout
+        android:id = "@+id/LinLay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/led_power"/>
+
+        <TextView
+            android:id="@+id/txtLed_power" 
+            android:text="Led Power:"
+            android:textSize= "18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progress4"
+            android:layout_width="200.0dp"
+            android:layout_height="20dp"
+            android:progress = "50"
+            />
+     </LinearLayout>
+    <LinearLayout
+        android:id = "@+id/LinLay5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/humidity"/>
+
+        <TextView
+            android:id="@+id/txthumidity" 
+            android:text="Board Humidity:"
+            android:textSize= "18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progress5"
+            android:layout_width="200.0dp"
+            android:layout_height="20dp"
+            android:progress = "50"
+            />
+     </LinearLayout>
+    <LinearLayout
+        android:id = "@+id/LinLay6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/thermometer"/>
+
+        <TextView
+            android:id="@+id/txtTemperature" 
+            android:text="Board Temperature:"
+            android:textSize= "18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progress6"
+            android:layout_width="200.0dp"
+            android:layout_height="20dp"
+            android:progress = "50"
+            />
+     </LinearLayout>
+ 
+        </LinearLayout>
+
+            <ListView
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        >
+
+        <EditText
+            android:id="@+id/edit_text_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

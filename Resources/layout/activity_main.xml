@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sample_main_layout"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Toolbar
+        android:id="@+id/toolbar_bottom"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="?android:attr/colorAccent"
+        android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
+        android:popupTheme="@android:style/ThemeOverlay.Material.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title = "@string/app_name"
+        android:titleTextColor = "@android:color/white"/>
+    <TextView
+        android:text="@string/intro_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView1"/>
+    <Button
+        android:text="@string/scan"
+        android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
+        android:background="?android:attr/colorAccent"
+        android:textColor = "@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/button_scan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp" >
+
+       <ImageView
+        android:src="@drawable/splash_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#1A4C87"
+        android:id="@+id/industry_tool" />  
+    </LinearLayout>
+</LinearLayout>
